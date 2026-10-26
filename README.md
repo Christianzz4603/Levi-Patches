@@ -1,6 +1,6 @@
 # LeviLaunchroid Patches
 
-A solo-developed patch bundle for LeviLaunchroid.
+A solo-developed patch bundle for LeviLaunchroid..
 
 The goal of this project is to provide new features
 for LeviLaunchroid.
