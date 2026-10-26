@@ -1,13 +1,9 @@
 # LeviLaunchroid Patches
 
-A community-developed patch bundle for LeviLaunchroid.
+A solo-developed patch bundle for LeviLaunchroid.
 
-The goal of this project is to provide performance optimizations,
-quality-of-life improvements, and other useful enhancements
+The goal of this project is to provide new features
 for LeviLaunchroid.
-
-Optimization patches are under development. Each patch should
-be tested before being considered ready for general use.
 
 ## Add to Morphe
 
