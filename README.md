@@ -12,7 +12,22 @@ for LeviLaunchroid.
 ## Patches
 
 <!-- PATCHES_START EXPANDED -->
-The patch list will appear here after the first patches release.
+> **[v1.0.0](https://github.com/Christianzz4603/Levi-Patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+<details open>
+<summary>📦 XYZ app&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 2.0.0 | 1.0.2 |
+| :---: | :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Example Patch](#example-patch) | Example patch to start with. |  |
+
+</details>
+
 <!-- PATCHES_END -->
 
 ## Development
