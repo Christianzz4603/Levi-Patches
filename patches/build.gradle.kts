@@ -1,21 +1,21 @@
-group = "app.template"
+group = "org.levimc.launcher.patches"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "LeviLaunchroid Patches"
+        description = "Performance optimizations and quality-of-life improvements for LeviLaunchroid."
+        source = "https://github.com/Christianzz4603/Levi-Patches"
+        author = "Christianzz4603"
+        contact = "https://github.com/Christianzz4603"
+        website = "https://github.com/Christianzz4603/Levi-Patches"
         license = "GPLv3"
     }
 }
 
-// Separate configuration so gson is available at runtime for the
-// generatePatchesList task but never bundled into the APK.
-val patchListGeneratorClasspath = configurations.create("patchListGeneratorClasspath")
+// Keep Gson available for generating the patch list,
+// without bundling it into the patch bundle.
+val patchListGeneratorClasspath =
+    configurations.create("patchListGeneratorClasspath")
 
 dependencies {
     compileOnly(libs.gson)
@@ -25,14 +25,16 @@ dependencies {
 tasks {
     register<JavaExec>("generatePatchesList") {
         description = "Build patch with patch list"
-
         dependsOn(build)
 
-        classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
+        classpath =
+            sourceSets["main"].runtimeClasspath +
+                patchListGeneratorClasspath
+
         mainClass.set("util.PatchListGeneratorKt")
     }
 
-    // Used by gradle-semantic-release-plugin.
+    // Used by the semantic-release plugin.
     publish {
         dependsOn("generatePatchesList")
     }
