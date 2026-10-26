@@ -1,18 +1,30 @@
-rootProject.name = "morphe-patches-template"
+rootProject.name = "levilaunchroid-patches"
 
 pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
+
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/MorpheApp/registry")
+            url = uri(
+                "https://maven.pkg.github.com/MorpheApp/registry"
+            )
+
             credentials {
-                username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR")
-                password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("GITHUB_TOKEN")
+                username =
+                    providers.gradleProperty("gpr.user").orNull
+                        ?: System.getenv("GITHUB_ACTOR")
+
+                password =
+                    providers.gradleProperty("gpr.key").orNull
+                        ?: System.getenv("GITHUB_TOKEN")
             }
         }
-        maven { url = uri("https://jitpack.io") }
+
+        maven {
+            url = uri("https://jitpack.io")
+        }
     }
 }
 
