@@ -4,10 +4,10 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.template.patches.shared.Constants.COMPATIBILITY_LEVI_LAUNCHER
 
 @Suppress("unused")
-val leviLauncherCompatibilityPatch = bytecodePatch(
-    name = "LeviLauncher Compatibility",
-    description = "Initial compatibility patch for LeviLauncher.",
-    use = false
+val leviLauncherPatch = bytecodePatch(
+    name = "LeviLauncher Patch",
+    description = "Patches for LeviLauncher.",
+    default = false
 ) {
     compatibleWith(COMPATIBILITY_LEVI_LAUNCHER)
 }
