@@ -1,33 +1,26 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "patches": [
     {
-      "name": "Example Patch",
-      "description": "Example patch to start with.",
-      "default": true,
+      "name": "LeviLauncher Patch",
+      "description": "Patches for LeviLauncher.",
+      "default": false,
       "category": null,
       "compatiblePackages": [
         {
-          "packageName": "com.example.app",
-          "name": "XYZ app",
+          "packageName": "org.levimc.launcher",
+          "name": "LeviLauncher",
           "description": null,
           "apkFileType": "APK",
-          "appIconColor": "#FF0045",
+          "appIconColor": "#6750A4",
           "signatures": null,
           "formFactor": "MOBILE",
           "targets": [
             {
-              "version": "2.0.0",
+              "version": null,
               "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
-            {
-              "version": "1.0.2",
-              "versionCodes": null,
-              "isExperimental": false,
+              "isExperimental": true,
               "minSdk": null,
               "description": null
             }
